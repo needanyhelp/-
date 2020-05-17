@@ -1,0 +1,17 @@
+https://aws.amazon.com/ko/premiumsupport/knowledge-center/connect-rds-mysql-workbench/
+
+위 동영상 참고하셔서 연결하시면 됩니다.
+
+MySQL Workbench 프로그램에서 연결하셔야됩니다.
+
+DB연결 정보는 보안관련이라서 입력정보를 깃허브와 카카오톡으로 나눠서 보내드리겠습니다.
+**는 카카오톡으로 보낸 문자입니다.
+
+Connection name: mysql**  
+
+Hostname : mysqldb.c7sm3oz********************************
+
+username: adm**  
+
+password: ehdr*****   
+
