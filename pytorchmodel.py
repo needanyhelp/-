@@ -95,10 +95,10 @@ transforms_train = transforms.Compose([transforms.Resize((128, 128)),
 transforms_test = transforms.Compose([transforms.Resize((128, 128)),
                                       transforms.ToTensor()])
 
-train_data_set = CustomImageDataset(data_set_path="C:/Users/neptu/Desktop/machineLearning", transforms=transforms_train)
+train_data_set = CustomImageDataset(data_set_path="C:/Users/neptu/Desktop/food", transforms=transforms_train)
 train_loader = DataLoader(train_data_set, batch_size=hyper_param_batch, shuffle=True)
 
-test_data_set = CustomImageDataset(data_set_path="C:/Users/neptu/Desktop/machineLearning2", transforms=transforms_test)
+test_data_set = CustomImageDataset(data_set_path="C:/Users/neptu/Desktop/foodtest", transforms=transforms_test)
 test_loader = DataLoader(test_data_set, batch_size=hyper_param_batch, shuffle=True)
 
 if not (train_data_set.num_classes == test_data_set.num_classes):
@@ -149,5 +149,5 @@ with torch.no_grad():
 
 input_tensor=torch.rand(1,3,224,224)
 script_model = torch.jit.trace(custom_model,input_tensor)
-script_model.save('C:/Users/neptu/Desktop/amobilenet-v2.pt')
+script_model.save('C:/Users/neptu/Desktop/bmobilenet-v2.pt')
 #torch.save(custom_model.state_dict(),'C:/Users/neptu/Desktop/mobilenet-v2.pt')
